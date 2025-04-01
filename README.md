@@ -30,7 +30,8 @@ This project requires a Weather API key. Follow these steps:
 2. Get your API key.
 3. Replace `YOUR_API_KEY` in the JavaScript file:
    ```js
-   const apiKey = "YOUR_API_KEY";
+   const yourApi = {YOUR_API_KEY};
+   const URl:`https://api.openweathermap.org/data/2.5/weather?&units=metric&q=famagusta+&appleid=${yourApi}`;
    ```
 
 Feel free to contribute, raise issues, or suggest improvements! 🚀
