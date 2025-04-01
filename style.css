@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #ccc;
+}
+.card{
+    width: 90%;
+    max-width: 29.688rem;
+    background: linear-gradient(350deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 1.25rem;
+    padding: 40px 35px;
+    margin: 100px auto 0; 
+    text-align: center;
+}
+.search{
+    width: 100%;
+    max-width: 444px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search input{
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    color: #555;
+    padding: 0.625rem 1.563rem;
+    height: 3.75rem;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+
+}
+.search button{
+    border: none;
+    outline: none;
+    background: #ebfffc;
+    border-radius: 50%;
+    width: 3.75rem;
+    height: 3.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.search button img{
+    width:1rem;
+
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: - 10px;
+}
+.details{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .Wind{
+    font-size: 1.75rem;
+    margin-top: -6px;
+}
+.weather{
+    display: none;
+}
+.error{
+    text-align: left;
+    margin-left: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    display: none;
+}
+@media (max-width: 480px) {
+    .search {
+        flex-direction: horizontal;
+        align-items: stretch;
+    }
+
+    .search input {
+        width: 100%;
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    .search button {
+        width: 3rem;
+        height: 3rem;
+        align-self: center;
+    }
+}
